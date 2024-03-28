@@ -34,5 +34,18 @@ if ($conn->query($sql) === TRUE) {
     echo "Error creating table: " . $conn->error . "<br>";
 }
 
+// Collect form data
+$patient_name = $_POST['patient_name'] ?? '';
+$patient_age = $_POST['patient_age'] ?? '';
+$patient_condition = $_POST['patient_condition'] ?? '';
+
+// Insert patient data
+$sql = "INSERT INTO patients (name, age, patient_condition) VALUES ('$patient_name', '$patient_age', '$patient_condition')";
+if ($conn->query($sql) === TRUE) {
+    echo "Patient data inserted successfully<br>";
+} else {
+    echo "Error inserting patient data: " . $conn->error . "<br>";
+}
+
 $conn->close();
 ?>
