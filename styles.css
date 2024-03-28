@@ -1,0 +1,82 @@
+/* Reset default browser styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e5dfdf;
+    color: #333;
+}
+
+header, main, footer {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #035f147a;
+    color: #fff;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+section {
+    width: 45%;
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+/* CSS styles for medicine bill form */
+.center {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+/* till here billing is there */
+
+footer {
+    background-color: #035f147a;
+    color: #fff;
+    text-align: center;
+    clear: both;
+    position: relative;
+    margin-top: 20px;
+}
